@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Fortify\Fortify;
 
 return [
 
@@ -160,6 +161,9 @@ return [
          * Package Service Providers...
          */
 
+        //fortify service provider
+
+        App\Providers\FortifyServiceProvider::class,
         /*
          * Application Service Providers...
          */
